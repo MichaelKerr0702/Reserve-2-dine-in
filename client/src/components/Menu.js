@@ -1,39 +1,27 @@
 import React from 'react'; 
+import Categories from './Categories';
 
-function Resume() {
+const Menu = ({ items }) => {
 
-return(
-<section class="mb-5">
-    <h1 className="resume"></h1>
-        <hr></hr>
-        <div class="row justify-content-center" id="resume">
-            <div class="mt-5 pl-5 pr-5">
-    
-                <p>
-                Takeout: Burgers & Fries
-                </p>
-
-                <p>
-                    
-                </p>
+return( 
+    <div className="section-center">
+      {items.map((item) => {
+        const { id, title, img, desc, price } = item;
+        return (
+          <article key={id} className="menu-item">
+            <img src={img} alt={title} className="photo" />
+            <div className="item-info">
+              <header>
+                <h4>{title}</h4>
+                <h4 className="price">${price}</h4>
+              </header>
+              <p className="item-text">{desc}</p>
             </div>
-        </div>
+          </article>
+        );
+      })}
+    </div>
+  );
+};
 
-        <div class="justify-content-center mt-5">
-            <div id="front-back">
-                <h2> </h2>
-                <p></p>
-            </div>
-    
-            <div id="front-back" class="mt-5">
-                <h2></h2>
-                <p>
-                
-                </p>
-            </div>
-        </div>
-</section>
-);
-}
-
-export default Resume;
+export default Menu;
