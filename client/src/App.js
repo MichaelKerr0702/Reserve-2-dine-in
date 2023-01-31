@@ -54,6 +54,40 @@ const App = () => {
 			</BrowserRouter>
 		</ApolloProvider>
 	);
+
+ //const [menuItems, setMenuItems] = useState(items);
+ //const [activeCategory, setActiveCategory] = useState("");
+ // const [categories] = useState(allCategories);
+
+  //const filterItems = (category) => {
+  //  setActiveCategory(category);
+  //  if (category === "all") {
+  //    setMenuItems(items);
+   //   return;
+ //   }
+ //  const newItems = items.filter((item) => item.category === category);
+  //  setMenuItems(newItems);
+ // };
+  return (
+    <main>
+      <div>
+        <Header />
+      </div>
+      <section className="menu section">
+        <div className="title">
+          <img src={logo} alt="logo" className="logo" />
+          <h2>Menu List</h2>
+          <div className="underline"></div>
+        </div>
+        <Categories
+         // categories={categories}
+        //  activeCategory={activeCategory}
+        //  filterItems={filterItems}
+        />
+       <Menu /> 
+      </section>
+    </main>
+  );
 };
 
 export default App;
