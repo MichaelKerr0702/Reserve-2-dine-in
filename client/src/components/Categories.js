@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "./Menu";
 
 const Categories = ({ categories, filterItems, activeCategory }) => {
   return (
