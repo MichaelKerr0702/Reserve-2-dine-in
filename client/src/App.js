@@ -1,17 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
 import React, { useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import items from "./data";
-import logoMain from "../src/logo.JPG";
+import logo from "./logo1.png";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 const App = () => {
   const [menuItems, setMenuItems] = useState(items);
   const [activeCategory, setActiveCategory] = useState("");
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filterItems = (category) => {
     setActiveCategory(category);
@@ -26,7 +24,7 @@ const App = () => {
     <main>
       <section className="menu section">
         <div className="title">
-          <img src={logoMain} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
           <h2>Menu List</h2>
           <div className="underline"></div>
         </div>
