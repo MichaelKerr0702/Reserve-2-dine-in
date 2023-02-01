@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import GmailImg from "../assets/GmailIcon.png";
+import Alert from "react-bootstrap/Alert";
 
 function ReservePage() {
+  const [show, setShow] = useState(false);
+
   const [email, setEmail] = useState("");
+
+  // console.log(email);
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -18,12 +23,27 @@ function ReservePage() {
         email,
       }),
     });
-    console.log(res);
-    const data = res.json();
-    return data;
+
+    const data = await res.json();
+    console.log(data);
+
+    if (data.status === 401 || !data) {
+      console.log("error");
+    } else {
+      setShow(true);
+      setEmail("");
+      console.log("Email sent");
+    }
   };
   return (
     <section className="title">
+      {show ? (
+        <Alert variant="primary" onClose={() => setShow(false)} dismissible>
+          Your Email Succesfully Send
+        </Alert>
+      ) : (
+        ""
+      )}
       <div className="container mt-2">
         <div className="d-flex justify-content-center">
           <h2>You can send us email for further questions</h2>

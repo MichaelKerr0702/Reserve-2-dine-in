@@ -30,7 +30,7 @@ router.post("/register", (req, res) => {
       }
     });
   } catch (error) {
-    res.status(201).json({ status: 401, info });
+    res.status(401).json({ status: 401, info });
   }
 });
 
