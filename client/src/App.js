@@ -12,7 +12,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ReservePage from './pages/ReservePage';
 import MenuPage from './pages/MenuPage';
-import ContactPage from './pages/ContactPage';
+import ReviewPage from './pages/ReviewPage';
 //import Footer from './components/Footer';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 // import './App.css';
@@ -48,46 +48,13 @@ const App = () => {
 						<Route path="/" element={<HomePage />} />
 						<Route path="/reserve" element={<ReservePage />} />
 						<Route path="/menu" element={<MenuPage />} />
-						<Route path="/contact" element={<ContactPage />} />
+						<Route path="/review" element={<ReviewPage />} />
 					</Routes>
 				</div>
 			</BrowserRouter>
 		</ApolloProvider>
 	);
 
- //const [menuItems, setMenuItems] = useState(items);
- //const [activeCategory, setActiveCategory] = useState("");
- // const [categories] = useState(allCategories);
-
-  //const filterItems = (category) => {
-  //  setActiveCategory(category);
-  //  if (category === "all") {
-  //    setMenuItems(items);
-   //   return;
- //   }
- //  const newItems = items.filter((item) => item.category === category);
-  //  setMenuItems(newItems);
- // };
-  return (
-    <main>
-      <div>
-        <Header />
-      </div>
-      <section className="menu section">
-        <div className="title">
-          <img src={logo} alt="logo" className="logo" />
-          <h2>Menu List</h2>
-          <div className="underline"></div>
-        </div>
-        <Categories
-         // categories={categories}
-        //  activeCategory={activeCategory}
-        //  filterItems={filterItems}
-        />
-       <Menu /> 
-      </section>
-    </main>
-  );
-};
+	};
 
 export default App;

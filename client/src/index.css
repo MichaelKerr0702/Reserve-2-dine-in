@@ -142,30 +142,11 @@ body {
     color: var(--outer-space-crayola);
   }
   
-  #contact-section {
-    justify-content: center;
-    margin: 20px;
-    margin-left: 10em;
-    margin-right: 10em;
-  }
+
   
-  #front-back ul {
-    list-style-type: none;
-  }
+
   
-  #front-back ul li {
-    list-style-type: none;
-  }
-  
-  #front-back h2 {
-    text-align: center;
-    color: var(--outer-space-crayola);
-  }
-  
-  #front-back p {
-    background-color: var(--lavender-blush);
-  }
-  
+
 
   
   #footer {
@@ -193,7 +174,7 @@ body {
   h1,
   h2,
   h3,
-  h4 {
+  h4 {    
     letter-spacing: 0.1rem;
     text-transform: capitalize;
     line-height: 1.25;
@@ -225,11 +206,12 @@ body {
     }
   }
   .menu {
-    padding: 5rem 0;
+    padding: 0rem 0;
   }
   .title {
     text-align: center;
-    margin-bottom: 2rem;
+    top: 15rem;
+    right: 15rem;
   }
   
   .underline {

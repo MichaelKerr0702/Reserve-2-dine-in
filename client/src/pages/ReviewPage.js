@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helper';
 
-function ContactForm() {
+function ReviewForm() {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
@@ -67,4 +67,4 @@ return (
     );
 }
     
-export default ContactForm;
+export default ReviewForm;
