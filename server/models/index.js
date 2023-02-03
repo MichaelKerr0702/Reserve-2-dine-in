@@ -1,4 +1,4 @@
 const Product = require('./Product');
+const Reservation = require('./Reservation')
 
-
-module.exports = { Product};
+module.exports = {Product, Reservation};
