@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Menu from '../components/Menu';
 import Categories from '../components/Categories';
 import items from '../utils/data';
-import logo from '../assets/logo1.png';
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))];
 
@@ -23,7 +22,6 @@ const MenuPage = () => {
 	return (
 		<section className="menu section">
 			<div className="title">
-				<img src={logo} alt="logo" className="logo" />
 				<h2>Menu List</h2>
 				<div className="underline"></div>
 			</div>
