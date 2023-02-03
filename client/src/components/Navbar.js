@@ -9,7 +9,7 @@ function Navbar(props) {
 			<NavLink to="/">Home </NavLink>
 			<NavLink to="/reserve">Reserve </NavLink>
 			<NavLink to="/menu">Menu </NavLink>
-			<NavLink to="/contact">Review </NavLink>
+			<NavLink to="/review">Review </NavLink>
 		</div><img src={logo} alt="logo" className="logo" /></>
 
 	);
