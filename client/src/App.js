@@ -39,24 +39,7 @@ const client = new ApolloClient({
 });
 
 const App = () => {
-  return (
-    <ApolloProvider client={client}>
-      <BrowserRouter>
-        <div className="row Header" id="header">
-          <Navbar />
-        </div>
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/reserve" element={<ReservePage />} />
-            <Route path="/menu" element={<MenuPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </ApolloProvider>
-  );
-};
+  
 
 	return (
 		<ApolloProvider client={client}>
