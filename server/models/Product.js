@@ -3,32 +3,30 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
-  name: {
+  id: {
+    type: Number,
+  },
+  title: {
     type: String,
     required: true,
     trim: true
   },
-  description: {
-    type: String
-  },
-  image: {
-    type: String
+  category: {
+    type: Schema.Types.ObjectId,
+    ref: 'Category',
+    required: true
   },
   price: {
     type: Number,
     required: true,
     min: 0.99
   },
-  quantity: {
-    type: Number,
-    min: 0,
-    default: 0
+  image: {
+    type: String
   },
-  category: {
-    type: Schema.Types.ObjectId,
-    ref: 'Category',
-    required: true
-  }
+  description: {
+    type: String
+  } 
 });
 
 const Product = mongoose.model('Product', productSchema);
