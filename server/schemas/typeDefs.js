@@ -9,11 +9,7 @@ const typeDefs = gql`
     quantity: Int
     price: Float
   }
-
-  type Order {
-    _id: ID
-    purchaseDate: String
-    products: [Product]
+  
   }
   type Reservation{
     _id: ID
