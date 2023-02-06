@@ -30,7 +30,7 @@ a {
 p {
   font-size: 18px;
   font-weight: bold;
-  background-color: var(--lavender-blush);
+  /* background-color: var(--lavender-blush); */
   text-align: center;
 }
 
@@ -124,7 +124,8 @@ h1 {
 #about-section p {
   margin-top: 57px;
 
-  color: var(--outer-space-crayola);
+  /* color: var(--outer-space-crayola); */
+  color: white;
 }
 
 #footer {
@@ -166,7 +167,8 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: hsl(210, 22%, 49%);
+  /* color: hsl(210, 22%, 49%); */
+  color: white;
 }
 
 .section {
@@ -351,4 +353,15 @@ h6 {
   border: 1px solid white;
   padding: 5px;
   border-radius: 20px;
+}
+
+.bgImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  width: 80%;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
