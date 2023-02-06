@@ -7,21 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: hsl(210, 36%, 96%);
   color: hsl(209, 61%, 16%);
+  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 :root {
-  --outer-space-crayola: #394648;
-  --lavender-blush: #f8e9e9;
+  --outer-space-crayola:#394648;
+  --lavender-blush:#f8e9e9;
+  
+
 }
-/* 
-* {
-  background: lightsalmon;
-} */
+
+*  {
+  background: white;
+}
 
 a {
   background: none;
@@ -35,11 +38,12 @@ p {
 }
 
 h1 {
-  margin: auto 30px;
+  margin: auto 30px; 
   padding: 10px;
   color: var(--melon);
   font-weight: bold;
   text-align: center;
+
 }
 
 #header {
@@ -59,6 +63,7 @@ h1 {
   padding-left: 1em;
   font-weight: bold;
   text-decoration: none;
+ 
 }
 
 .card {
@@ -90,6 +95,8 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+
+
 
 #card-title {
   margin-top: 10px;
@@ -127,6 +134,7 @@ h1 {
   color: var(--outer-space-crayola);
 }
 
+
 #footer {
   background-color: var(--outer-space-crayola);
 }
@@ -141,6 +149,9 @@ h1 {
   margin-top: 8px;
 }
 
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -149,7 +160,7 @@ code {
 h1,
 h2,
 h3,
-h4 {
+h4 {    
   letter-spacing: 0.1rem;
   text-transform: capitalize;
   line-height: 1.25;
@@ -248,7 +259,8 @@ p {
 .logo {
   width: 30%;
   height: 40%;
-  text-align: center;
+text-align: center;
+
 }
 
 .item-info header {
@@ -306,6 +318,7 @@ p {
   display: flex;
 }
 
+
 h6 {
   font-size: larger;
   font-weight: 700;
@@ -323,32 +336,4 @@ h6 {
   width: 60%;
   border-radius: 20px;
   margin: auto;
-}
-
-.container mt-2 {
-  background-color: lightblue;
-}
-
-.header {
-  background-color: #003580;
-  color: white;
-  /* display: flex; */
-  justify-content: center;
-  position: relative;
-}
-
-.headerContainer {
-  width: 100%;
-  max-width: 1024px;
-  margin: 20px 0px 100px 0px;
-}
-
-.headerContainer {
-  margin: 20px 0px 0px 0px;
-}
-
-.headerListItem.active {
-  border: 1px solid white;
-  padding: 5px;
-  border-radius: 20px;
 }
