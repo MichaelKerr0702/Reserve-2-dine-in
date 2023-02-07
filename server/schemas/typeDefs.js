@@ -6,45 +6,25 @@ const typeDefs = gql`
     title: String
     category: String
     price: Float
+    img: String
+    desc: String
   }
   
-  }
   type Reservation{
     _id: ID
-    CustomerName: String
+    cSustomerName: String
     guestAmount: Int
     timeStart: String
     timeEnd: String
     comments: String
   }
 
-  type User {
-    _id: ID
-    firstName: String
-    lastName: String
-    email: String
-    orders: [Order]
-  }
-
-  type Checkout {
-    session: ID
-  }
-
-  type Auth {
-    token: ID
-    user: User
-  }
 
   type Query {
     product(_id: ID!): Product
+    products: [Product]
   }
 
-  type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updateProduct(_id: ID!, quantity: Int!): Product
-    login(email: String!, password: String!): Auth
-  }
 `;
 
 module.exports = typeDefs;
