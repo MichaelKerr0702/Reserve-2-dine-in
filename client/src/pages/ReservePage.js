@@ -19,15 +19,6 @@ import { format } from "date-fns";
 import TimePicker from "react-time-picker";
 import Calendar from "moedim";
 
-// const Header = () => {
-//   return (
-//     <div className="header">
-//       <div className="headerList">
-//         <div className="headerListItem"></div>
-//       </div>
-//     </div>
-//   );
-// };
 
 function ReservePage() {
   const [value, setValue] = useState(new Date());

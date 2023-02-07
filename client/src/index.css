@@ -15,8 +15,19 @@ code {
 }
 
 :root {
+<<<<<<< Updated upstream
   --outer-space-crayola: #394648;
   --lavender-blush: #f8e9e9;
+=======
+  --outer-space-crayola:#394648;
+  --lavender-blush:#ffffff;
+  
+
+}
+
+*  {
+  background: white;
+>>>>>>> Stashed changes
 }
 /* 
 * {
@@ -61,15 +72,8 @@ h1 {
   text-decoration: none;
 }
 
-.card {
-  background-color: var(--outer-space-crayola);
-  border-radius: 5px;
-  height: 400px;
-  margin: 2rem;
-  position: relative;
-  width: 400px;
-}
 
+<<<<<<< Updated upstream
 .card .img-container {
   height: 75%;
   overflow: hidden;
@@ -96,6 +100,8 @@ h1 {
   color: var(--lavender-blush);
   text-shadow: 1px 1px 6px var(--outer-space-crayola);
 }
+=======
+>>>>>>> Stashed changes
 
 .wrapper {
   padding-top: 50px;
@@ -248,9 +254,16 @@ p {
 }
 
 .logo {
+<<<<<<< Updated upstream
   width: 30%;
   height: 40%;
   text-align: center;
+=======
+  width: 18%;
+  height: 20%;
+text-align: center;
+
+>>>>>>> Stashed changes
 }
 
 .item-info header {
@@ -313,12 +326,19 @@ h6 {
   font-weight: 700;
   margin-right: 10px;
 }
-.reviews-form {
-  padding: 5px;
-  width: 50vw;
-  border-radius: 20px;
+
+
+
+/* Write your CSS here */
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90vw;
 }
 
+<<<<<<< Updated upstream
 .form-container {
   padding: 20px;
   background: #eedfdf;
@@ -365,3 +385,233 @@ h6 {
   min-height: 100%;
   background-position: center;
 }
+=======
+.content-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-icon {
+  padding: 10px;
+  width: 38px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-align: center;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.sub-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.name-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.username {
+  color: #000000;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.time-now {
+  color: #000000;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.comment-line {
+  color: #000000;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.icons-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.like-btn {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  margin-right: 10px;
+}
+
+.image2 {
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+
+.icon-name {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.del-image {
+  width: 20px;
+  height: 20px;
+}
+
+.del-btn {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .comment-item {
+    width: 75vw;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px;
+}
+
+.main-heading {
+  color: #1e293b;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inner-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.element-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.name-field {
+  width: 280px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #cbd2d9;
+  outline: none;
+}
+.comment-field {
+  width: 280px;
+  height: 100px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #cbd2d9;
+  border-width: 2px;
+  outline: none;
+}
+
+::placeholder {
+  color: #475569;
+}
+
+.btn {
+  background-color: #000000;
+  border-style: none;
+  border-radius: 2px;
+  color: #dee0e3;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 110px;
+}
+
+.image1 {
+  width: 400px;
+  height: 300px;
+}
+
+.comments-count {
+  color: #334155;
+  font-size: 14px;
+}
+
+hr {
+  background-color: #cbd2d9;
+  opacity: 0.5;
+  width: 88vw;
+  margin-left: 0;
+}
+
+.number-count {
+  color: white;
+  padding: 6px;
+  background-color: #77868d;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.comment-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0px;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .main-container {
+    padding: 40px;
+  }
+  hr {
+    width: 80vw;
+  }
+
+  .inner-holder {
+    flex-wrap: wrap;
+  }
+
+  .element-holder {
+    order: 1;
+  }
+  .image1 {
+    order: 0;
+    width: 300px;
+    height: 200px;
+  }
+}
+>>>>>>> Stashed changes

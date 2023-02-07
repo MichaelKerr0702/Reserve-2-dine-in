@@ -1,11 +1,21 @@
 import React from "react";
 import image from "../assets/CafeImage.jpeg";
 
+import logo from '../assets/logo1.png';
+
 const HomePage = () => {
+<<<<<<< Updated upstream
   return (
     <section className="title">
       <h1 class="name"> About Reserve To Dine </h1>
       <hr></hr>
+=======
+	return (
+		<section className="title">
+			<h1 class="name"> About Reserve To Dine </h1>
+			<img src={logo} alt="logo" className="logo" />
+			<hr></hr>
+>>>>>>> Stashed changes
 
       <div className="bgImage" style={{ backgroundImage: `url(${image})` }}>
         <div className="row justify-content-center">
