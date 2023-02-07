@@ -15,24 +15,18 @@ code {
 }
 
 :root {
-<<<<<<< Updated upstream
-  --outer-space-crayola: #394648;
-  --lavender-blush: #f8e9e9;
-=======
+
+
   --outer-space-crayola:#394648;
   --lavender-blush:#ffffff;
-  
 
 }
 
 *  {
   background: white;
->>>>>>> Stashed changes
+
 }
-/* 
-* {
-  background: lightsalmon;
-} */
+
 
 a {
   background: none;
@@ -41,7 +35,6 @@ a {
 p {
   font-size: 18px;
   font-weight: bold;
-  /* background-color: var(--lavender-blush); */
   text-align: center;
 }
 
@@ -73,7 +66,7 @@ h1 {
 }
 
 
-<<<<<<< Updated upstream
+
 .card .img-container {
   height: 75%;
   overflow: hidden;
@@ -100,9 +93,6 @@ h1 {
   color: var(--lavender-blush);
   text-shadow: 1px 1px 6px var(--outer-space-crayola);
 }
-=======
->>>>>>> Stashed changes
-
 .wrapper {
   padding-top: 50px;
   justify-content: space-around;
@@ -115,7 +105,7 @@ h1 {
 }
 
 #footer {
-  padding: 5px;
+  padding: 20px;
   margin-top: 10px;
 }
 
@@ -131,20 +121,18 @@ h1 {
   margin-top: 57px;
 
   /* color: var(--outer-space-crayola); */
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #footer {
-  background-color: var(--outer-space-crayola);
+  background-color: rgb(201, 198, 199);
+  
 }
 
-#footer .icon {
-  background-color: var(--outer-space-crayola);
-  margin-top: 20px;
-}
+
 
 #footer p {
-  background-color: var(--outer-space-crayola);
+  background-color: rgb(237, 230, 230);
   margin-top: 8px;
 }
 
@@ -174,7 +162,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   /* color: hsl(210, 22%, 49%); */
-  color: white;
+  color: rgb(2, 2, 2);
 }
 
 .section {
@@ -248,22 +236,16 @@ p {
   object-fit: cover;
   height: 200px;
   width: 100%;
-  border: 0.25rem solid hsl(360, 71%, 66%);
+  border: .24rem solid hsl(0, 5%, 25%);
   border-radius: 0.25rem;
   display: block;
 }
 
 .logo {
-<<<<<<< Updated upstream
-  width: 30%;
-  height: 40%;
-  text-align: center;
-=======
-  width: 18%;
-  height: 20%;
-text-align: center;
 
->>>>>>> Stashed changes
+  width: 20%;
+  height: 20%;
+  text-align: center;
 }
 
 .item-info header {
@@ -338,7 +320,6 @@ h6 {
   width: 90vw;
 }
 
-<<<<<<< Updated upstream
 .form-container {
   padding: 20px;
   background: #eedfdf;
@@ -385,7 +366,6 @@ h6 {
   min-height: 100%;
   background-position: center;
 }
-=======
 .content-holder {
   display: flex;
   flex-direction: row;
@@ -614,4 +594,3 @@ hr {
     height: 200px;
   }
 }
->>>>>>> Stashed changes

@@ -1,23 +1,18 @@
 import React from "react";
-import image from "../assets/CafeImage.jpeg";
 
 import logo from '../assets/logo1.png';
 
+import cafe from '../assets/CafeImage.png';
+
 const HomePage = () => {
-<<<<<<< Updated upstream
   return (
-    <section className="title">
-      <h1 class="name"> About Reserve To Dine </h1>
-      <hr></hr>
-=======
-	return (
+
 		<section className="title">
 			<h1 class="name"> About Reserve To Dine </h1>
 			<img src={logo} alt="logo" className="logo" />
-			<hr></hr>
->>>>>>> Stashed changes
+      <img src={cafe} alt="cafe" className="cafe" />
 
-      <div className="bgImage" style={{ backgroundImage: `url(${image})` }}>
+			<hr></hr>
         <div className="row justify-content-center">
           <div className="col-10" id="about-section">
             <p>
@@ -31,16 +26,14 @@ const HomePage = () => {
                 <p>
                   "The Egg Attack is my morning breakfeast everyday, must eat."
                   - Bobby Flay
-                </p>{" "}
+                </p>
               </p>
               <p>
-                {" "}
                 Reserve To Dine™ since last week, proudly owned and served.{" "}
               </p>
             </p>
           </div>
         </div>
-      </div>
     </section>
   );
 };
