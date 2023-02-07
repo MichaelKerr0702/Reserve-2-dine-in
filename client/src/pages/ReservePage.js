@@ -140,6 +140,8 @@ function ReservePage() {
 
                 <Col xl={6} xs={12} md={6}>
                   <div className="headerListItem mt-3">
+                    <span>No.of Guest: </span>
+
                     <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                     <span
                       onClick={() => setOpenOptions(!openOptions)}
