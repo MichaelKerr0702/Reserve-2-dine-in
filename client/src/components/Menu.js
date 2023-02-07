@@ -1,9 +1,8 @@
-import React from 'react'; 
-import Categories from './Categories';
+import React from "react";
+// import Categories from './Categories';
 
 const Menu = ({ items }) => {
-
-return( 
+  return (
     <div className="section-center">
       {items.map((item) => {
         const { id, title, img, desc, price } = item;
