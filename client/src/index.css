@@ -15,18 +15,13 @@ code {
 }
 
 :root {
-
-
-  --outer-space-crayola:#394648;
-  --lavender-blush:#ffffff;
-
+  --outer-space-crayola: #394648;
+  --lavender-blush: #ffffff;
 }
 
-*  {
-  background: white;
-
+* {
+  background: lightblue;
 }
-
 
 a {
   background: none;
@@ -44,6 +39,8 @@ h1 {
   color: var(--melon);
   font-weight: bold;
   text-align: center;
+  background-color: orange;
+  border-radius: 50px;
 }
 
 #header {
@@ -64,8 +61,6 @@ h1 {
   font-weight: bold;
   text-decoration: none;
 }
-
-
 
 .card .img-container {
   height: 75%;
@@ -119,20 +114,19 @@ h1 {
 
 #about-section p {
   margin-top: 57px;
-
+  color: white;
   /* color: var(--outer-space-crayola); */
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
 }
 
 #footer {
-  background-color: rgb(201, 198, 199);
-  
+  /* background-color: rgb(201, 198, 199); */
+  background-color: gainsboro;
 }
 
-
-
 #footer p {
-  background-color: rgb(237, 230, 230);
+  /* background-color: rgb(237, 230, 230); */
+  background-color: orange;
   margin-top: 8px;
 }
 
@@ -162,7 +156,10 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   /* color: hsl(210, 22%, 49%); */
-  color: rgb(2, 2, 2);
+  /* color: rgb(2, 2, 2); */
+
+  background-color: orange;
+  border-radius: 10px;
 }
 
 .section {
@@ -236,16 +233,17 @@ p {
   object-fit: cover;
   height: 200px;
   width: 100%;
-  border: .24rem solid hsl(0, 5%, 25%);
+  border: 0.24rem solid hsl(0, 5%, 25%);
   border-radius: 0.25rem;
   display: block;
 }
 
 .logo {
-
   width: 20%;
   height: 20%;
   text-align: center;
+  background-color: white;
+  border-radius: 100px;
 }
 
 .item-info header {
@@ -297,6 +295,7 @@ p {
   border: 1px solid black;
   border-radius: 10px;
   margin: 5px;
+  /* background-color: white; */
 }
 .center,
 .right {
@@ -308,8 +307,6 @@ h6 {
   font-weight: 700;
   margin-right: 10px;
 }
-
-
 
 /* Write your CSS here */
 .comment-item {
@@ -333,8 +330,8 @@ h6 {
 }
 
 .header {
-  background-color: #003580;
-  color: white;
+  /* background-color: #003580; */
+  color: black;
   /* display: flex; */
   justify-content: center;
   position: relative;
@@ -351,7 +348,7 @@ h6 {
 }
 
 .headerListItem.active {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 5px;
   border-radius: 20px;
 }
@@ -462,8 +459,6 @@ h6 {
   margin-right: 2%;
 }
 
-
-
 @media screen and (max-width: 576px) {
   .comment-item {
     width: 75vw;
@@ -476,14 +471,14 @@ h6 {
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 50px;
 }
 
 .main-heading {
   color: #1e293b;
   font-size: 35px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inner-holder {
@@ -507,24 +502,24 @@ h6 {
   font-size: 14px;
   margin-bottom: 20px;
   border-style: solid;
-  border-color: #cbd2d9;
+  border-color: orange;
   outline: none;
 }
 .comment-field {
   width: 280px;
   height: 100px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 5px;
   font-size: 14px;
   margin-bottom: 20px;
   border-style: solid;
-  border-color: #cbd2d9;
+  border-color: orange;
   border-width: 2px;
   outline: none;
 }
 
 ::placeholder {
-  color: #475569;
+  color: black;
 }
 
 .btn {
@@ -544,7 +539,7 @@ h6 {
 }
 
 .comments-count {
-  color: #334155;
+  color: black;
   font-size: 14px;
 }
 
@@ -593,4 +588,20 @@ hr {
     width: 300px;
     height: 200px;
   }
+}
+.cafe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* border-radius: 50px; */
+}
+
+.logoReview {
+  background-color: white;
+  border-radius: 200px;
+}
+
+.reserveTable {
+  background-color: orange;
 }

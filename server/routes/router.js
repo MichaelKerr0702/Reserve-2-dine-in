@@ -17,8 +17,8 @@ router.post("/register", (req, res) => {
     const mailOptions = {
       from: process.env.EMAIL,
       to: email,
-      subject: "sending email with react and nodejs",
-      html: "<h1>Congratulation You successfully sent email</h1>",
+      subject: "Table Reservation",
+      html: "<h1>Thank you! Your table has been booked</h1>",
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
