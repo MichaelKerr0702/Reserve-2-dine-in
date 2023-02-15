@@ -1,10 +1,11 @@
 import React from 'react';
+import logo from '../assets/logo1.png';
 
 function Footer() {   
     return (
     <div class="footer" id="footer">
     <p>
-        love food
+Follow us on Twitter: @ReserveToDine
     </p>
 
     </div>
