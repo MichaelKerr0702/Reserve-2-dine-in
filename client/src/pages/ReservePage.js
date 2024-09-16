@@ -11,26 +11,19 @@ import {
   faPerson,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { DateRange } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main style file
-import "react-date-range/dist/theme/default.css"; // theme css file
+// import { DateRange } from "react-date-range";
+// import "react-date-range/dist/styles.css"; // main style file
+// import "react-date-range/dist/theme/default.css"; // theme css file
 
 import { format } from "date-fns";
 import TimePicker from "react-time-picker";
-
-// const Header = () => {
-//   return (
-//     <div className="header">
-//       <div className="headerList">
-//         <div className="headerListItem"></div>
-//       </div>
-//     </div>
-//   );
-// };
+import Calendar from "moedim";
 
 function ReservePage() {
-  const [value, onChange] = useState("10:00");
-  const [openDate, setOpenDate] = useState(false);
+  const [value, setValue] = useState(new Date());
+
+  const [value1, onChange] = useState("10:00");
+  // const [openDate, setOpenDate] = useState(false);
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
     adult: 1,
@@ -46,13 +39,13 @@ function ReservePage() {
     });
   };
 
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: null,
-      key: "selection",
-    },
-  ]);
+  // const [date, setDate] = useState([
+  //   {
+  //     startDate: new Date(),
+  //     endDate: null,
+  //     key: "selection",
+  //   },
+  // ]);
 
   const [show, setShow] = useState(false);
 
@@ -76,7 +69,9 @@ function ReservePage() {
         firstName,
         lastName,
         contact,
-        date,
+        value,
+
+        // date,
         time: value,
         options,
       }),
@@ -103,6 +98,10 @@ function ReservePage() {
         ""
       )}
 
+      <div className="reserveTable">
+        <h1>Reserve Your Table</h1>
+      </div>
+
       <div className="container mt-2">
         {/* <div className="d-flex justify-content-center">
           <h2>You can send us email for further questions</h2>
@@ -114,35 +113,29 @@ function ReservePage() {
               <Row className="mt-3">
                 <Col xl={6} xs={12} md={6}>
                   <div className="headerListItem active">
+                    <Calendar value={value} onChange={(d) => setValue(d)} />
                     <FontAwesomeIcon
                       icon={faCalendarDays}
                       className="headerIcon"
                     />
-                    <span
+                    {/* <span
                       onClick={() => setOpenDate(!openDate)}
                       className="headerSearchText"
-                    >{`${format(date[0].startDate, "MM/dd/yyyy")}`}</span>
-                    {openDate && (
-                      <DateRange
-                        editableDateInputs={true}
-                        onChange={(item) => setDate([item.selection])}
-                        moveRangeOnFirstSelection={false}
-                        range={date}
-                        className="date"
-                      />
-                    )}
+                    >{`${format(date[0].startDate, "MM/dd/yyyy")}`}</span> */}
                   </div>
                 </Col>
 
                 <Col xl={6} xs={12} md={6}>
                   <div className="headerListItem mt-3">
                     <span className="headerSearchText">Time</span>
-                    <TimePicker onChange={onChange} value={value} />
+                    <TimePicker onChange={onChange} value={value1} />
                   </div>
                 </Col>
 
                 <Col xl={6} xs={12} md={6}>
                   <div className="headerListItem mt-3">
+                    <span>No.of Guest: </span>
+
                     <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                     <span
                       onClick={() => setOpenOptions(!openOptions)}

@@ -1,6 +1,5 @@
-const { AuthenticationError } = require('apollo-server-express');
-const {Product, Reservation} = require('../models');
-
+const { AuthenticationError } = require("apollo-server-express");
+const { Product, Reservation } = require("../models");
 
 const resolvers = {
   Query: {
@@ -8,19 +7,18 @@ const resolvers = {
       return await Product.findById(_id);
     },
     products: async () => {
-      return await Product.find()
-    }
+      return await Product.find();
+    },
   },
   // Mutation: {
-    // addResorvation: async (parent, args) => {
-    //   const reserved = await Reservation.create(args);
+  // addResorvation: async (parent, args) => {
+  //   const reserved = await Reservation.create(args);
 
-    //   return { reserved };
-    // },
-    // deleteResorvation: async (parent, {_id}) => {
-    //   return await Reservation.findByIdAndDelete(_id)
-    // }
-  // }
+  //   return { reserved };
+  // },
+  // deleteResorvation: async (parent, { _id }) => {
+  //   return await Reservation.findByIdAndDelete(_id);
+  // },
+  // },
 };
-
 module.exports = resolvers;

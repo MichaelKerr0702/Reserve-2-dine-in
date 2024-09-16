@@ -14,8 +14,9 @@ import HomePage from './pages/HomePage';
 import ReservePage from './pages/ReservePage';
 import MenuPage from './pages/MenuPage';
 import ReviewPage from './pages/ReviewPage';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 // import './App.css';
 
@@ -52,12 +53,16 @@ const App = () => {
 						<Route path="/reserve" element={<ReservePage />} />
 						<Route path="/menu" element={<MenuPage />} />
 						<Route path="/review" element={<ReviewPage />} />
+
 					</Routes>
+					<Footer></Footer>
 				</div>
 			</BrowserRouter>
 		</ApolloProvider>
 	);
 };
+
+
 
 
 
